@@ -1,5 +1,5 @@
 try:import secrets,re;from colorama import Fore;from requests import get;from time import sleep
-except ModuleNotFoundError:exit('[!] Download The Missing Module !')
+except Exception as e:print(f'[!] Download The Missing Module ! , {e}');exit()
 
 class Fake_Email:
     def __init__(self):pass
